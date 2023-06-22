@@ -83,11 +83,10 @@ local notify = {
             end
     
             local header = {
-                ["Content-Type"] = "application/json"
+                ["Content-Type"] = "application/json; charset=utf-8"
             }
             local body = {
                 title = "SMS短信转发",
-                description = "SMS短信通知",
                 content = msg,
                 token = config.MESSAGE_PUSHER_KEY
             }

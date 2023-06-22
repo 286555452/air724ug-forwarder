@@ -155,7 +155,6 @@ local options_select = 0
 
 powerKey.setup(
     1000 * 0.5,
-    -- 500 * 1,
     function()
         if cc.anyCallExist() then
             local cc_state = cc.getState(CALL_NUMBER)

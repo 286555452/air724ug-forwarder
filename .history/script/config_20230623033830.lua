@@ -7,8 +7,8 @@ module(...)
 NOTIFY_TYPE = {"wecom","message-pusher"}
 
 -- telegram 通知配置, https://github.com/0wQ/telegram-notify 或者自行反代
--- TELEGRAM_API = "hhttps://api.telegram.org/715837909:AAEiN30pXae_qn-O0phPufCaDRJZ29ZxWXk/sendMessage"
--- TELEGRAM_CHAT_ID = "a286555452bot"
+TELEGRAM_API = "hhttps://api.telegram.org/715837909:AAEiN30pXae_qn-O0phPufCaDRJZ29ZxWXk/sendMessage"
+TELEGRAM_CHAT_ID = "a286555452bot"
 
 -- pushdeer 通知配置, https://www.pushdeer.com/
 -- PUSHDEER_API = "https://api2.pushdeer.com/message/push"

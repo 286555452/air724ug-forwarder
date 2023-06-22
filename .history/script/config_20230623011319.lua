@@ -4,11 +4,11 @@ module(...)
 
 -- 通知类型, 支持配置多个
 -- NOTIFY_TYPE = {"telegram", "pushdeer", "bark", "dingtalk", "feishu", "wecom", "pushover", "inotify", "next-smtp-proxy", "gotify", "serverchan"}
-NOTIFY_TYPE = {"wecom","message-pusher"}
+NOTIFY_TYPE = {"wecom","telegram","message pusher"}
 
 -- telegram 通知配置, https://github.com/0wQ/telegram-notify 或者自行反代
--- TELEGRAM_API = "hhttps://api.telegram.org/715837909:AAEiN30pXae_qn-O0phPufCaDRJZ29ZxWXk/sendMessage"
--- TELEGRAM_CHAT_ID = "a286555452bot"
+TELEGRAM_API = "hhttps://api.telegram.org/715837909:AAEiN30pXae_qn-O0phPufCaDRJZ29ZxWXk/sendMessage"
+TELEGRAM_CHAT_ID = ""
 
 -- pushdeer 通知配置, https://www.pushdeer.com/
 -- PUSHDEER_API = "https://api2.pushdeer.com/message/push"
@@ -27,7 +27,7 @@ NOTIFY_TYPE = {"wecom","message-pusher"}
 -- wecom 通知配置, https://developer.work.weixin.qq.com/document/path/91770
 WECOM_WEBHOOK = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=addbb380-ebdd-4c81-a968-4f4713b221cb"
 
--- message-pusher 通知配置, https://push.910102.xyz/
+-- message pusher 通知配置, https://push.910102.xyz/
 MESSAGE_PUSHER_API = "https://push.910102.xyz/push/cra"
 MESSAGE_PUSHER_KEY = "yxR4Q7garJXBhv"
 
@@ -76,13 +76,13 @@ NOTIFY_RETRY_MAX = 20
 -- 存储桶需设置为: <私有读写>
 -- 存储桶 Policy 权限: <用户类型: 所有用户> <授权资源: xxx-123456/{录音文件目录}/*> <授权操作: PutObject,GetObject>
 -- 提示: 本项目未使用签名认证上传, 请勿泄露自己的地址及目录名
-UPLOAD_URL = "https://cnhfovzadsza.objectstorage.ap-seoul-1.oci.customer-oci.com/p/y_juGF5hpfpdJvJeFjzLrPXjMblPLWT8BwFvDFnEFwfQJphg2NxcLlLtsKUNv1Zl/n/cnhfovzadsza/b/clone/o/"
+UPLOAD_URL = "http://xxx-123456.cos.ap-nanjing.myqcloud.com/{录音文件目录}"
 
 -------------------------------------------------- 短信来电配置 --------------------------------------------------
 
 -- 允许发短信控制设备的号码, 如果注释掉或者为空, 则允许所有号码
 -- SMS_CONTROL_WHITELIST_NUMBERS = {"18xxxxxxx", "18xxxxxxx", "18xxxxxxx", "18xxxxxxx"},
-SMS_CONTROL_WHITELIST_NUMBERS = {"18919089952", "13919963378"}
+SMS_CONTROL_WHITELIST_NUMBERS = {}
 
 -- 扬声器 TTS 播放短信内容, 0：关闭(默认)，1：仅验证码，2：全部
 SMS_TTS = 0

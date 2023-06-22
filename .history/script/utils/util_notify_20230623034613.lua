@@ -87,12 +87,10 @@ local notify = {
             }
             local body = {
                 title = "SMS短信转发",
-                description = "SMS短信通知",
                 content = msg,
                 token = config.MESSAGE_PUSHER_KEY
             }
             local json_data = json.encode(body)
-            -- LuatOS Bug, json.encode 会将 \n 转换为 \b
             json_data = string.gsub(json_data, "\\b", "\\n")
     
             log.info("util_notify", "POST", config.MESSAGE_PUSHER_API)

@@ -28,7 +28,7 @@ NOTIFY_TYPE = {"wecom","message-pusher"}
 WECOM_WEBHOOK = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=addbb380-ebdd-4c81-a968-4f4713b221cb"
 
 -- message-pusher 通知配置, https://push.910102.xyz/
-MESSAGE_PUSHER_API = "https://push.910102.xyz/push/cra"
+MESSAGE_PUSHER_API = "https://push.910102.xyz/push/cra/"
 MESSAGE_PUSHER_KEY = "yxR4Q7garJXBhv"
 
 -- pushover 通知配置, https://pushover.net/api
