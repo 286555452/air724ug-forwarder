@@ -77,10 +77,10 @@ NOTIFY_RETRY_MAX = 20
 -- 存储桶 Policy 权限: <用户类型: 所有用户> <授权资源: xxx-123456/{录音文件目录}/*> <授权操作: PutObject,GetObject>
 -- 提示: 本项目未使用签名认证上传, 请勿泄露自己的地址及目录名
 -- UPLOAD_URL = "https://cnhfovzadsza.objectstorage.ap-seoul-1.oci.customer-oci.com/p/y_juGF5hpfpdJvJeFjzLrPXjMblPLWT8BwFvDFnEFwfQJphg2NxcLlLtsKUNv1Zl/n/cnhfovzadsza/b/clone/o/"
-UPLOAD_URL = "https://air724ug-1254441778.cos.ap-beijing.myqcloud.com/2775-luyin"
+UPLOAD_URL = ""
 -------------------------------------------------- 短信来电配置 --------------------------------------------------
 
--- 允许发短信控制设备的号码, 如果注释掉或者为空, 则允许所有号码54
+-- 允许发短信控制设备的号码, 如果注释掉或者为空, 则允许所有号码
 -- SMS_CONTROL_WHITELIST_NUMBERS = {"18xxxxxxx", "18xxxxxxx", "18xxxxxxx", "18xxxxxxx"},
 SMS_CONTROL_WHITELIST_NUMBERS = {"18919089952", "13919963378"}
 

@@ -80,7 +80,7 @@ NOTIFY_RETRY_MAX = 20
 UPLOAD_URL = "https://air724ug-1254441778.cos.ap-beijing.myqcloud.com/2775-luyin"
 -------------------------------------------------- 短信来电配置 --------------------------------------------------
 
--- 允许发短信控制设备的号码, 如果注释掉或者为空, 则允许所有号码54
+-- 允许发短信控制设备的号码, 如果注释掉或者为空, 则允许所有号码
 -- SMS_CONTROL_WHITELIST_NUMBERS = {"18xxxxxxx", "18xxxxxxx", "18xxxxxxx", "18xxxxxxx"},
 SMS_CONTROL_WHITELIST_NUMBERS = {"18919089952", "13919963378"}
 
