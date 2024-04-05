@@ -1,2 +1,4 @@
 .luatide
 luatide_project.json
+.vscode
+.history
